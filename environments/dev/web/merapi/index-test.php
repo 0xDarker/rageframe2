@@ -24,20 +24,4 @@ $config = yii\helpers\ArrayHelper::merge(
     require __DIR__ . '/../../merapi/config/test-local.php'
 );
 
-/**
- * 打印
- *
- * @param $array
- */
-function p(...$array)
-{
-    echo "<pre>";
-
-    if (count($array) == 1) {
-        print_r($array[0]);
-    } else {
-        print_r($array);
-    }
-}
-
 (new yii\web\Application($config))->run();

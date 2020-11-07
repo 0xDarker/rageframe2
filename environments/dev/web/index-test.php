@@ -24,14 +24,4 @@ $config = yii\helpers\ArrayHelper::merge(
     require __DIR__ . '/../frontend/config/test-local.php'
 );
 
-/**
- * 打印
- *
- * @param $array
- */
-function p($array){
-    echo "<pre>";
-    print_r($array);
-}
-
 (new yii\web\Application($config))->run();
